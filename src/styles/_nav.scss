@@ -1,0 +1,32 @@
+nav {
+  min-height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    // padding: 0.5rem;
+    transition: all 0.3s ease;
+    img{
+      height: 3rem;
+    }
+    &:hover {
+      .cls-1{
+        stroke: red;
+      }
+    }
+  }
+  img{
+    height: 2.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav {
+    button {
+      z-index: 10;
+    }
+  }
+}
